@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+header{
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    height: 50px;
+  }
+  
+  .lang {
+    border: none;
+    outline: none;
+    width: 32px;
+    height: 32px;
+  
+    &.ka {
+      background: url("/assets/images/ka.png");
+    }
+  
+    &.en {
+      background: url("/assets/images/en.png");
+    }
+  
+    &.inactive {
+      filter: grayscale(100%);
+    }
+  }
