@@ -18,6 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
+
 export function TranslateHttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, 'assets/i18n/');
 }
@@ -44,7 +45,7 @@ export function TranslateHttpLoaderFactory(http: HttpClient): TranslateHttpLoade
       defaultLanguage: 'ka',
     }),
     AngularFireModule.initializeApp(environment.firebase),
-    NgbModule,
+    NgbModule
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]
